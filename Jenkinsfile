@@ -1,6 +1,8 @@
 pipeline {
     agent { label 'ubuntu_container' }
 
+    tools {nodejs "node-20"}
+
     stages {
 
         stage ('Code') {
