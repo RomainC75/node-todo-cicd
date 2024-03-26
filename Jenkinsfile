@@ -11,8 +11,10 @@ pipeline {
         
         stage ('Build & Test') {
             steps {
-                npm i
-                npm run start
+                sh """
+                    npm i
+                    npm run start
+                """
             }
         }
         
