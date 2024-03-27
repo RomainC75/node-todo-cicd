@@ -19,12 +19,12 @@ pipeline {
             }
         }
 
-        stage ('Deployment') {
-            steps {
-                // Add deployment steps here
-                // This could be copying files to a server, starting a Docker container, etc.
-            }
-        }
+        // stage ('Deployment') {
+        //     steps {
+        //         // Add deployment steps here
+        //         // This could be copying files to a server, starting a Docker container, etc.
+        //     }
+        // }
 
         stage('Wait for Manual Stop') {
             steps {
